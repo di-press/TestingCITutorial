@@ -23,10 +23,9 @@ def test_divide():
 
     # triggering error:
     # division by zero raises ValueError
-    #try:
-    #    divide(1, 0)
-    #except ValueError as e:
-    #    assert str(e) == "Cannot divide by zero!"
+    
+    assert divide(1, 0) == -1
+
 
     # fixing error with desired behavior
     #with pytest.raises(ValueError, match="Cannot divide by zero!"):
