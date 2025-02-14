@@ -21,12 +21,7 @@ def test_divide():
     assert divide(1, 2) == 0.5
     assert divide(10, 5) == 2
 
-    # triggering error:
-    # division by zero raises ValueError
-    
-    assert divide(1, 0) == -1
-
 
     # fixing error with desired behavior
-    #with pytest.raises(ValueError, match="Cannot divide by zero!"):
-    #    divide(1, 0)
+    with pytest.raises(ValueError, match="Cannot divide by zero!"):
+        divide(1, 0)
